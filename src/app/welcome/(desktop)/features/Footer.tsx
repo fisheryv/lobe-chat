@@ -1,12 +1,12 @@
 'use client';
 
-import { ActionIcon, DiscordIcon } from '@lobehub/ui';
+import { ActionIcon } from '@lobehub/ui';
 import { useTheme } from 'antd-style';
-import { Book, Github } from 'lucide-react';
+import { Book, Github, Home } from 'lucide-react';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-import { DISCORD, GITHUB, WIKI } from '@/const/url';
+import { GITHUB, HOME, WIKI } from '@/const/url';
 
 const Footer = memo(() => {
   const theme = useTheme();
@@ -14,14 +14,14 @@ const Footer = memo(() => {
   return (
     <Flexbox align={'center'} horizontal justify={'space-between'} style={{ padding: 16 }}>
       <span style={{ color: theme.colorTextDescription }}>
-        ©{new Date().getFullYear()} LobeHub
+        ©{new Date().getFullYear()} ilovemath.xyz
       </span>
       <Flexbox horizontal>
         <ActionIcon
-          icon={DiscordIcon}
-          onClick={() => window.open(DISCORD, '__blank')}
+          icon={Home}
+          onClick={() => window.open(HOME, '__blank')}
           size={'site'}
-          title={'Discord'}
+          title={'Home'}
         />
         <ActionIcon
           icon={Book}
