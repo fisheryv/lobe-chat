@@ -15,7 +15,7 @@ In the official ChatGPT app, there is only the concept of topics, as shown in th
 
 ![](https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/279602474-fe7cb3f3-8eb7-40d3-a69f-6615393bbd4e.png)
 
-Therefore, in LobeChat, we introduced the concept of `Agent`. The agent is a complete functional module, and each agent has its own responsibilities and tasks. The agent can help you handle various tasks and provide professional advice and guidance.
+Therefore, in PlanChat, we introduced the concept of `Agent`. The agent is a complete functional module, and each agent has its own responsibilities and tasks. The agent can help you handle various tasks and provide professional advice and guidance.
 
 At the same time, we index the topic into each agent. The advantage of this is that each agent has an independent topic list, you can choose the corresponding agent according to the current task, and quickly switch historical conversation records. This way is more in line with the user's use habits of common chat software, and improves the interaction efficiency.
 

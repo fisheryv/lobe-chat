@@ -1,6 +1,6 @@
 # 技术开发上手指南
 
-欢迎来到 LobeChat 技术开发上手指南。LobeChat 是一款基于 Next.js 框架构建的 AI 会话应用，它汇集了一系列的技术栈，以实现多样化的功能和特性。本指南将详细介绍 LobeChat 的主要技术组成，以及如何在你的开发环境中配置和使用这些技术。
+欢迎来到 PlanChat 技术开发上手指南。PlanChat 是一款基于 Next.js 框架构建的 AI 会话应用，它汇集了一系列的技术栈，以实现多样化的功能和特性。本指南将详细介绍 PlanChat 的主要技术组成，以及如何在你的开发环境中配置和使用这些技术。
 
 #### TOC
 
@@ -9,7 +9,7 @@
 
 ## 基础技术栈
 
-LobeChat 的核心技术栈如下：
+PlanChat 的核心技术栈如下：
 
 - **框架**：我们选择了 [Next.js](https://nextjs.org/)，这是一款强大的 React 框架，为我们的项目提供了服务端渲染、路由框架、Router Handler 等关键功能。
 - **组件库**：我们使用了 [Ant Design (antd)](https://ant.design/) 作为基础组件库，同时引入了 [lobe-ui](https://github.com/lobehub/lobe-ui) 作为我们的业务组件库。
@@ -22,7 +22,7 @@ LobeChat 的核心技术栈如下：
 
 ## 文件夹目录架构
 
-LobeChat 的文件夹目录架构如下：
+PlanChat 的文件夹目录架构如下：
 
 ```bash
 src

@@ -1,8 +1,8 @@
 # Plugin Usage
 
-The plugin system is a key element in expanding the capabilities of the assistant in LobeChat. You can enhance the assistant's abilities by enabling a variety of plugins.
+The plugin system is a key element in expanding the capabilities of the assistant in PlanChat. You can enhance the assistant's abilities by enabling a variety of plugins.
 
-Watch the following video to quickly get started with using LobeChat plugins:
+Watch the following video to quickly get started with using PlanChat plugins:
 
 <https://github.com/lobehub/lobe-chat/assets/28616219/94d4c312-1699-4e24-8782-138883678c9e>
 
@@ -12,7 +12,7 @@ You can access the Plugin Store by navigating to "Extension Tools" -> "Plugin St
 
 ![Plugin Store](https://github.com/lobehub/lobe-chat/assets/28616219/ab4e60d0-1293-49ac-8798-cb29b3b789e6)
 
-The Plugin Store contains plugins that can be directly installed and used in LobeChat.
+The Plugin Store contains plugins that can be directly installed and used in PlanChat.
 
 ![Plugin Store](https://github.com/lobehub/lobe-chat/assets/28616219/d7a5d821-116f-4be6-8a1a-38d81a5ea0ea)
 
@@ -34,11 +34,11 @@ After installing a plugin, you can click on "Settings" to enter the plugin's set
 
 ## Installing Custom Plugins
 
-If you wish to install a plugin that is not available in the LobeChat Plugin Store, such as a custom LobeChat plugin you developed, you can click on "Custom Plugins" to install it:
+If you wish to install a plugin that is not available in the PlanChat Plugin Store, such as a custom PlanChat plugin you developed, you can click on "Custom Plugins" to install it:
 
 [Custom Plugin Installation](https://github.com/lobehub/lobe-chat/assets/28616219/034a328c-8465-4499-8f93-fdcdb03343cd)
 
-Additionally, LobeChat's plugin mechanism is compatible with ChatGPT plugins, allowing you to easily install corresponding ChatGPT plugins.
+Additionally, PlanChat's plugin mechanism is compatible with ChatGPT plugins, allowing you to easily install corresponding ChatGPT plugins.
 
 If you want to try installing custom plugins on your own, you can use the following links:
 
@@ -50,4 +50,4 @@ If you want to try installing custom plugins on your own, you can use the follow
 
 ## Developing Plugins
 
-If you want to develop a LobeChat plugin on your own, feel free to refer to the [Lobe Plugin Development Guide](https://chat-plugin-sdk.lobehub.com/guides/intro) to expand the possibilities of your AI assistant!
+If you want to develop a PlanChat plugin on your own, feel free to refer to the [Lobe Plugin Development Guide](https://chat-plugin-sdk.lobehub.com/guides/intro) to expand the possibilities of your AI assistant!

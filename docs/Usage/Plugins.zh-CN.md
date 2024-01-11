@@ -1,8 +1,8 @@
 # 插件使用
 
-插件体系是 LobeChat 中扩展助理的能力的关键要素，你可以通过为助手启用各式各样的插件来增强助手的各项能力。
+插件体系是 PlanChat 中扩展助理的能力的关键要素，你可以通过为助手启用各式各样的插件来增强助手的各项能力。
 
-查看以下视频，快速上手使用 LobeChat 插件：
+查看以下视频，快速上手使用 PlanChat 插件：
 
 <https://github.com/lobehub/lobe-chat/assets/28616219/94d4c312-1699-4e24-8782-138883678c9e>
 
@@ -12,7 +12,7 @@
 
 ![820shots_so](https://github.com/lobehub/lobe-chat/assets/28616219/ab4e60d0-1293-49ac-8798-cb29b3b789e6)
 
-插件商店中会在 LobeChat 中可以直接安装并使用的插件。
+插件商店中会在 PlanChat 中可以直接安装并使用的插件。
 
 ![image](https://github.com/lobehub/lobe-chat/assets/28616219/d7a5d821-116f-4be6-8a1a-38d81a5ea0ea)
 
@@ -34,11 +34,11 @@
 
 ## 安装自定义插件
 
-如果你希望安装一个不在 LobeChat 插件商店中的插件，例如自己开发的 LobeChat，你可以点击「自定义插件」进行安装：
+如果你希望安装一个不在 PlanChat 插件商店中的插件，例如自己开发的 PlanChat，你可以点击「自定义插件」进行安装：
 
 <https://github.com/lobehub/lobe-chat/assets/28616219/034a328c-8465-4499-8f93-fdcdb03343cd>
 
-此外，LobeChat 的插件机制兼容了 ChatGPT 的插件，因此你可以一键安装相应的 ChatGPT 插件。
+此外，PlanChat 的插件机制兼容了 ChatGPT 的插件，因此你可以一键安装相应的 ChatGPT 插件。
 
 如果你希望尝试自行安装自定义插件，你可以使用以下链接来尝试：
 
@@ -50,4 +50,4 @@
 
 ## 开发插件
 
-如果你希望自行开发一个 LobeChat 的插件，欢迎查阅 [Lobe 插件开发指南](https://chat-plugin-sdk.lobehub.com/zh-CN/guides/intro) 以扩展你的 AI 智能助手的可能性边界！
+如果你希望自行开发一个 PlanChat 的插件，欢迎查阅 [Lobe 插件开发指南](https://chat-plugin-sdk.lobehub.com/zh-CN/guides/intro) 以扩展你的 AI 智能助手的可能性边界！

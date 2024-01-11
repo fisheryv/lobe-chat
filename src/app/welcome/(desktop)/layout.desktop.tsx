@@ -4,6 +4,7 @@ import { Logo } from '@lobehub/ui';
 import { PropsWithChildren, memo } from 'react';
 import { Center, Flexbox } from 'react-layout-kit';
 
+import PlanLogo from '@/components/PlanLogo';
 import AppLayoutDesktop from '@/layout/AppLayout.desktop';
 
 import { useStyles } from '../features/Banner/style';
@@ -19,7 +20,7 @@ const Desktop = memo<PropsWithChildren>(({ children }) => {
         horizontal
         style={{ position: 'relative' }}
       >
-        <Logo className={styles.logo} size={36} type={'text'} />
+        <PlanLogo className={styles.logo} />
         <Flexbox className={styles.view} flex={1}>
           {children}
         </Flexbox>

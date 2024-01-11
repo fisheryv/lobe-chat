@@ -35,7 +35,7 @@ const Banner = memo<{ mobile?: boolean }>(({ mobile }) => {
         justify={'center'}
         width={'100%'}
       >
-        <DataImporter
+        {/* <DataImporter
           onFinishImport={() => {
             switchSession();
           }}
@@ -43,7 +43,7 @@ const Banner = memo<{ mobile?: boolean }>(({ mobile }) => {
           <Button block={mobile} size={'large'}>
             {t('button.import')}
           </Button>
-        </DataImporter>
+        </DataImporter> */}
         <Button
           block={mobile}
           onClick={() => (isMobile ? router?.push('/chat') : switchBackToChat())}

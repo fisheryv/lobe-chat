@@ -123,34 +123,48 @@ const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
     },
   ];
 
+  // return (
+  //   <>
+  //     <ActionIcon
+  //       icon={DiscordIcon}
+  //       onClick={() => window.open(DISCORD, '__blank')}
+  //       placement={'right'}
+  //       title={'Discord'}
+  //     />
+  //     <ActionIcon
+  //       icon={Github}
+  //       onClick={() => window.open(GITHUB, '__blank')}
+  //       placement={'right'}
+  //       title={'GitHub'}
+  //     />
+  //     <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
+  //       {hasNewVersion ? (
+  //         <Flexbox>
+  //           <ConfigProvider theme={{ components: { Badge: { dotSize: 8 } } }}>
+  //             <Badge dot offset={[-4, 4]}>
+  //               <ActionIcon active={tab === SidebarTabKey.Setting} icon={Settings2} />
+  //             </Badge>
+  //           </ConfigProvider>
+  //         </Flexbox>
+  //       ) : (
+  //         <ActionIcon active={tab === SidebarTabKey.Setting} icon={Settings2} />
+  //       )}
+  //     </Dropdown>
+  //   </>
+  // );
   return (
-    <>
-      <ActionIcon
-        icon={DiscordIcon}
-        onClick={() => window.open(DISCORD, '__blank')}
-        placement={'right'}
-        title={'Discord'}
-      />
-      <ActionIcon
-        icon={Github}
-        onClick={() => window.open(GITHUB, '__blank')}
-        placement={'right'}
-        title={'GitHub'}
-      />
-      <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
-        {hasNewVersion ? (
-          <Flexbox>
-            <ConfigProvider theme={{ components: { Badge: { dotSize: 8 } } }}>
-              <Badge dot offset={[-4, 4]}>
-                <ActionIcon active={tab === SidebarTabKey.Setting} icon={Settings2} />
-              </Badge>
-            </ConfigProvider>
-          </Flexbox>
-        ) : (
-          <ActionIcon active={tab === SidebarTabKey.Setting} icon={Settings2} />
-        )}
-      </Dropdown>
-    </>
+    <ActionIcon
+      active={tab === SidebarTabKey.Setting}
+      icon={Settings2}
+      onClick={() => {
+        setTab(SidebarTabKey.Setting);
+        useGlobalStore.setState({
+          settingsTab: SettingsTabs.Common,
+          sidebarKey: SidebarTabKey.Setting,
+        });
+        router.push('/settings/common');
+      }}
+    />
   );
 });
 

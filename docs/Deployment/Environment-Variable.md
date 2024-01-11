@@ -1,6 +1,6 @@
 # Environment Variables
 
-LobeChat provides additional configuration options during deployment, which can be set using environment variables
+PlanChat provides additional configuration options during deployment, which can be set using environment variables
 
 #### TOC
 
@@ -28,7 +28,7 @@ LobeChat provides additional configuration options during deployment, which can 
 ### `ACCESS_CODE`
 
 - Type: Optional
-- Description: Add a password to access the LobeChat service, ; you can set a long password to avoid leaking. If this value contains a comma, it is a password array.
+- Description: Add a password to access the PlanChat service, ; you can set a long password to avoid leaking. If this value contains a comma, it is a password array.
 - Default: `-`
 - Example: `awCTe)re_r74` or `rtrt_ewee3@09!` or `code1,code2,code3`
 
@@ -91,7 +91,7 @@ If you need to use Azure OpenAI to provide model services, you can refer to the 
 ### `PLUGINS_INDEX_URL`
 
 - Type: Optional
-- Description: The index address of the LobeChat plugin market. If you have deployed the plugin market service yourself, you can use this variable to override the default plugin market address
+- Description: The index address of the PlanChat plugin market. If you have deployed the plugin market service yourself, you can use this variable to override the default plugin market address
 - Default: `https://chat-plugins.lobehub.com`
 
 ### `PLUGIN_SETTINGS`
@@ -120,7 +120,7 @@ The above example adds `search-engine` plugin settings, and sets the `SERPAPI_AP
 ### `AGENTS_INDEX_URL`
 
 - Type: Optional
-- Description: The index address of the LobeChat role market. If you have deployed the role market service yourself, you can use this variable to override the default plugin market address
+- Description: The index address of the PlanChat role market. If you have deployed the role market service yourself, you can use this variable to override the default plugin market address
 - Default: `https://chat-agents.lobehub.com`
 
 <br/>

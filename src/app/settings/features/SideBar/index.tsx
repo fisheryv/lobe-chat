@@ -3,6 +3,7 @@ import { createStyles } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
+import PlanLogo from '@/components/PlanLogo';
 import FolderPanel from '@/features/FolderPanel';
 
 import UpgradeAlert from '../UpgradeAlert';
@@ -27,7 +28,8 @@ const SideBar = memo(() => {
       <DraggablePanelBody className={styles.body} style={{ padding: 0 }}>
         <Flexbox className={styles.top} padding={16}>
           <div>
-            <Logo className={styles.logo} extra={'Settings'} size={36} type={'text'} />
+            <PlanLogo type="text" />
+            <Logo className={styles.logo} extra={'Settings'} size={36} />
           </div>
         </Flexbox>
         <Flexbox gap={2} style={{ paddingInline: 8 }}>

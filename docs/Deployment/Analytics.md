@@ -1,6 +1,6 @@
 # Data Statistics
 
-To better analyze the usage of LobeChat users, we have integrated several free/open-source data statistics services in LobeChat for collecting user usage data, which you can enable as needed.
+To better analyze the usage of PlanChat users, we have integrated several free/open-source data statistics services in PlanChat for collecting user usage data, which you can enable as needed.
 
 #### TOC
 

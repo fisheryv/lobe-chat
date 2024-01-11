@@ -6,7 +6,7 @@
 
 <h1>Lobe Chat Wiki</h1>
 
-LobeChat is a open-source, extensible ([Function Calling][fc-url]), high-performance chatbot framework. <br/> It supports one-click free deployment of your private ChatGPT/LLM web application.
+PlanChat is a open-source, extensible ([Function Calling][fc-url]), high-performance chatbot framework. <br/> It supports one-click free deployment of your private ChatGPT/LLM web application.
 
 </div>
 
