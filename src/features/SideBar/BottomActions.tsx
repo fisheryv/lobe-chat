@@ -2,7 +2,6 @@ import { ActionIcon } from '@lobehub/ui';
 import { Settings2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
 import { GlobalStore, useGlobalStore } from '@/store/global';
 import { SettingsTabs, SidebarTabKey } from '@/store/global/initialState';
 
