@@ -1,4 +1,4 @@
-import { Logo, MobileNavBar } from '@lobehub/ui';
+import { MobileNavBar } from '@lobehub/ui';
 import { memo } from 'react';
 
 import PlanLogo from '@/components/PlanLogo';

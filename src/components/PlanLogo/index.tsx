@@ -4,10 +4,10 @@ import PlanLogo from '@/app/icons/logo.png';
 
 export default (props: any = {}) => {
   const { type, ...rest } = props;
-  return props.type !== 'text' ? (
+  return type !== 'text' ? (
     <Image
-      src={PlanLogo}
       alt="plan logo"
+      src={PlanLogo}
       style={{
         width: 160,
         height: 'auto',
