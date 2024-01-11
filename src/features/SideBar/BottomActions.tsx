@@ -13,14 +13,13 @@ export interface BottomActionProps {
 
 const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
   const router = useRouter();
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
 
-  const [hasNewVersion, useCheckLatestVersion] = useGlobalStore((s) => [
-    s.hasNewVersion,
-    s.useCheckLatestVersion,
-  ]);
+  // const [useCheckLatestVersion] = useGlobalStore((s) => [
+  //   s.useCheckLatestVersion,
+  // ]);
 
-  useCheckLatestVersion();
+  // useCheckLatestVersion();
 
   // const items: MenuProps['items'] = [
   //   {

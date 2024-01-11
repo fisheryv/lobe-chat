@@ -9,8 +9,8 @@ export default (props: any = {}) => {
       alt="plan logo"
       src={PlanLogo}
       style={{
-        width: 160,
         height: 'auto',
+        width: 160,
       }}
       {...rest}
     />
