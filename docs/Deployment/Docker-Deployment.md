@@ -47,7 +47,7 @@ $ docker run -d -p 3210:3210 \
 >
 > - The default mapped port is `3210`. Make sure it is not occupied or manually change the port mapping.
 > - Replace `sk-xxxx` in the above command with your own OpenAI API Key.
-> - The password set in the official Docker image is `lobe66` by default. Replace it with your own password to improve security.
+> - The official Docker doesn't set password by default. Please add your own password to improve security.
 > - For a complete list of environment variables supported by LobeChat, please refer to the [Environment Variables](https://github.com/lobehub/lobe-chat/wiki/Environment-Variable.zh-CN) section.
 
 > \[!WARNING]
@@ -81,7 +81,7 @@ First, create a `lobe.env` configuration file with various environment variables
 OPENAI_API_KEY=sk-xxxx
 OPENAI_PROXY_URL=https://api-proxy.com/v1
 ACCESS_CODE=arthals2333
-CUSTOM_MODELS=-gpt-4,-gpt-4-32k,-gpt-3.5-turbo-16k,gpt-3.5-turbo-1106=gpt-3.5-turbo-16k,gpt-4-1106-preview=gpt-4-turbo,gpt-4-vision-preview=gpt-4-vision
+CUSTOM_MODELS=-gpt-4,-gpt-4-32k,-gpt-3.5-turbo-16k,gpt-3.5-turbo-1106=gpt-3.5-turbo-16k,gpt-4-0125-preview=gpt-4-turbo,gpt-4-vision-preview=gpt-4-vision
 ```
 
 Then, you can use the following script to automatically update:

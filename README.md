@@ -186,14 +186,14 @@ e-commerce platform data access, and various third-party services.
 
 <!-- PLUGIN LIST -->
 
-| Recent Submits                                                                                                       | Description                                                                                                                                                                                                                     |
-| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [TokenInsights](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **feednews** on **2024-01-27**</sup>    | Get realtime crypto price, BTC, ETH, BNB, and the latest insights.The latest coin news and airdrop opportunities.<br/>`crypto` `btc` `eth` `bnb`                                                                                |
-| [Bilibili](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **LobeHub** on **2024-01-27**</sup>          | Dive into Bilibili's vast content with features like keyword video search, replay access, interactive danmaku, trending video recommendations, and hot-search insights, all at your fingertips.<br/>`video` `bilibili` `search` |
-| [Steam](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **LobeHub** on **2024-01-27**</sup>             | Obtain game information and user reviews from Steam.<br/>`steam` `game`                                                                                                                                                         |
-| [Current Time Assistant](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **cc** on **2024-01-26**</sup> | A plugin to provide current time information<br/>`time`                                                                                                                                                                         |
+| Recent Submits                                                                                                    | Description                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Charts & Diagrams](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **pyxl** on **2024-02-05**</sup> | Mermaid Diagrams, Schemes for Presentations, Analysis, research websites, pie charts.<br/>`chart` `diagram`                                                                                                                     |
+| [Social Search](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **say-apps** on **2024-02-02**</sup> | The Social Search provides access to tweets, users, followers, images, media and more.<br/>`social` `twitter` `x` `search`                                                                                                      |
+| [TokenInsights](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **feednews** on **2024-01-27**</sup> | Get realtime crypto price, BTC, ETH, BNB, and the latest insights.The latest coin news and airdrop opportunities.<br/>`crypto` `btc` `eth` `bnb`                                                                                |
+| [Bilibili](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **LobeHub** on **2024-01-27**</sup>       | Dive into Bilibili's vast content with features like keyword video search, replay access, interactive danmaku, trending video recommendations, and hot-search insights, all at your fingertips.<br/>`video` `bilibili` `search` |
 
-> 📊 Total plugins: [<kbd>**60**</kbd>](https://github.com/lobehub/lobe-chat-plugins)
+> 📊 Total plugins: [<kbd>**61**</kbd>](https://github.com/lobehub/lobe-chat-plugins)
 
  <!-- PLUGIN LIST -->
 
@@ -225,14 +225,14 @@ Our marketplace is not just a showcase platform but also a collaborative space. 
 
 <!-- AGENT LIST -->
 
-| Recent Submits                                                                                                                                                                            | Description                                                                                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SagePathfinder](https://chat-preview.lobehub.com/market?agent=sage-pathfinder)<br/><sup>By **[Ajasra](https://github.com/Ajasra)** on **2024-01-31**</sup>                               | Expert in personal growth coaching with a focus on stoicism, deep reflection, and strategic questioning.<br/>`personal-growth` `coaching` `reflection` `goal-setting` `well-being` |
-| [Variable Naming Master](https://chat-preview.lobehub.com/market?agent=variable-naming-assistant)<br/><sup>By **[undefinedZNN](https://github.com/undefinedZNN)** on **2024-01-31**</sup> | Master the art of programming variable naming, providing multiple suggestions and explaining their usage scenarios.<br/>`variable-naming` `programming` `suggestions`              |
-| [C1 Level English Language Facilitator](https://chat-preview.lobehub.com/market?agent=c-1-level-english)<br/><sup>By **[MYSeaIT](https://github.com/MYSeaIT)** on **2024-01-30**</sup>    | English Conversation Partner for C1 Level<br/>`english-conversation` `c-1-level` `language-proficiency` `language-coaching`                                                        |
-| [A2 English Conversation Facilitator](https://chat-preview.lobehub.com/market?agent=english-a-2-level)<br/><sup>By **[MYSeaIT](https://github.com/MYSeaIT)** on **2024-01-30**</sup>      | A2 Level English Conversation Partner Bot: Enhancing language skills for basic English learners.<br/>`english-conversation` `language-learning` `teaching`                         |
+| Recent Submits                                                                                                                                                                                | Description                                                                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [Vocabulary Wizard](https://chat-preview.lobehub.com/market?agent=awl-vocab-wizard)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup>                         | Expert in generating vocabulary lists and MCQ tests<br/>`vocabulary` `academic-word-list` `language-learning` `testing`                  |
+| [English Proficiency Evaluator](https://chat-preview.lobehub.com/market?agent=english-proficiency-assessor)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup> | Expert in creating adaptive English proficiency diagnostic tests<br/>`test-creation` `english-proficiency` `assessment`                  |
+| [Glossary Generator](https://chat-preview.lobehub.com/market?agent=glossary-generator)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup>                      | Expert in generating glossaries with English definitions and example sentences<br/>`glossary` `translation` `language`                   |
+| [Grammar Worksheet Creator](https://chat-preview.lobehub.com/market?agent=grammar-revision-worksheets)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup>      | Specializes in creating English grammar learning materials and exercises<br/>`english-grammar` `worksheet` `learning` `practice` `mc-qs` |
 
-> 📊 Total agents: [<kbd>**147**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
+> 📊 Total agents: [<kbd>**170**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
 
  <!-- AGENT LIST -->
 
@@ -599,7 +599,7 @@ This project is [MIT](./LICENSE) licensed.
 [codespaces-link]: https://codespaces.new/lobehub/lobe-chat
 [codespaces-shield]: https://github.com/codespaces/badge.svg
 [deploy-button-image]: https://vercel.com/button
-[deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat&env=OPENAI_API_KEY&envDescription=Find%20your%20OpenAI%20API%20Key%20by%20click%20the%20right%20Learn%20More%20button.&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&project-name=lobe-chat&repository-name=lobe-chat
+[deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat&env=OPENAI_API_KEY,ACCESS_CODE&envDescription=Find%20your%20OpenAI%20API%20Key%20by%20click%20the%20right%20Learn%20More%20button.%20%7C%20Access%20Code%20can%20protect%20your%20website&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&project-name=lobe-chat&repository-name=lobe-chat
 [deploy-on-sealos-button-image]: https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg
 [deploy-on-sealos-link]: https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dlobe-chat
 [deploy-on-zeabur-button-image]: https://zeabur.com/button.svg

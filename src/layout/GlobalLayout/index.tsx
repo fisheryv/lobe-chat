@@ -3,10 +3,12 @@
 import { App } from 'antd';
 import { createStyles } from 'antd-style';
 import 'antd/dist/reset.css';
+import { SessionProvider } from 'next-auth/react';
 import dynamic from 'next/dynamic';
 import { FC, PropsWithChildren, memo } from 'react';
 
 import { getClientConfig } from '@/config/client';
+import { API_ENDPOINTS } from '@/services/_url';
 
 import AppTheme, { AppThemeProps } from './AppTheme';
 import Locale from './Locale';
@@ -46,14 +48,18 @@ interface GlobalLayoutProps extends AppThemeProps {
   defaultLang?: string;
 }
 
-const GlobalLayout = ({ children, defaultLang, ...theme }: GlobalLayoutProps) => (
-  <AppTheme {...theme}>
-    <Locale defaultLang={defaultLang}>
-      <StoreHydration />
-      <Container>{children}</Container>
-      <DebugUI />
-    </Locale>
-  </AppTheme>
-);
+const GlobalLayout = ({ children, defaultLang, ...theme }: GlobalLayoutProps) => {
+  return (
+    <SessionProvider basePath={API_ENDPOINTS.oauth}>
+      <AppTheme {...theme}>
+        <Locale defaultLang={defaultLang}>
+          <StoreHydration />
+          <Container>{children}</Container>
+          <DebugUI />
+        </Locale>
+      </AppTheme>
+    </SessionProvider>
+  );
+};
 
 export default GlobalLayout;

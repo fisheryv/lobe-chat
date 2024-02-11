@@ -172,12 +172,12 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 | 最近新增                                                                                                          | 插件描述                                                                                                                                      |
 | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| [图表和图示](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **pyxl** on **2024-02-05**</sup>        | 美人鱼图表，演示文稿方案，分析，研究网站，饼图。<br/>`图表` `图示`                                                                            |
+| [社交搜索](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **say-apps** on **2024-02-02**</sup>      | 社交搜索提供访问推文、用户、关注者、图片、媒体等功能。<br/>`社交` `推特` `x` `搜索`                                                           |
 | [TokenInsights](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **feednews** on **2024-01-27**</sup> | 获取实时加密货币价格，BTC，ETH，BNB 和最新见解。最新的币新闻和空投机会。<br/>`加密货币` `btc` `eth` `bnb`                                     |
 | [哔哩哔哩](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **LobeHub** on **2024-01-27**</sup>       | 通过关键词视频搜索、回放访问、互动弹幕、热门视频推荐和热搜洞察等功能，深入体验哔哩哔哩丰富的内容，尽在您的指尖。<br/>`视频` `哔哩哔哩` `搜索` |
-| [Steam](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **LobeHub** on **2024-01-27**</sup>          | 从 Steam 获取游戏信息和用户评论。<br/>`steam` `game`                                                                                          |
-| [当前时间助手](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **cc** on **2024-01-26**</sup>        | 提供当前时间信息的插件<br/>`时间`                                                                                                             |
 
-> 📊 Total plugins: [<kbd>**60**</kbd>](https://github.com/lobehub/lobe-chat-plugins)
+> 📊 Total plugins: [<kbd>**61**</kbd>](https://github.com/lobehub/lobe-chat-plugins)
 
  <!-- PLUGIN LIST -->
 
@@ -205,14 +205,14 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 <!-- AGENT LIST -->
 
-| 最近新增                                                                                                                                                                               | 助手说明                                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| [SagePathfinder](https://chat-preview.lobehub.com/market?agent=sage-pathfinder)<br/><sup>By **[Ajasra](https://github.com/Ajasra)** on **2024-01-31**</sup>                            | 专注于斯多葛主义、深度反思和战略性提问的个人成长教练专家。<br/>`个人成长` `教练` `反思` `目标设定` `幸福感`                 |
-| [变量命名大师](https://chat-preview.lobehub.com/market?agent=variable-naming-assistant)<br/><sup>By **[undefinedZNN](https://github.com/undefinedZNN)** on **2024-01-31**</sup>        | 精通编程变量命名，提供多个建议并解释使用场景。<br/>`变量命名` `编程` `建议`                                                 |
-| [C1 Level English Language Facilitator](https://chat-preview.lobehub.com/market?agent=c-1-level-english)<br/><sup>By **[MYSeaIT](https://github.com/MYSeaIT)** on **2024-01-30**</sup> | English Conversation Partner for C1 Level<br/>`english-conversation` `c-1-level` `language-proficiency` `language-coaching` |
-| [A2 英语会话辅导员](https://chat-preview.lobehub.com/market?agent=english-a-2-level)<br/><sup>By **[MYSeaIT](https://github.com/MYSeaIT)** on **2024-01-30**</sup>                     | A2 级别英语会话伙伴机器人：提升基础英语学习者的语言能力。<br/>`英语会话` `语言学习` `教学`                                  |
+| 最近新增                                                                                                                                                                         | 助手说明                                                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| [词汇大师](https://chat-preview.lobehub.com/market?agent=awl-vocab-wizard)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup>                     | 擅长生成词汇列表和多项选择测试<br/>`词汇` `学术词汇表` `语言学习` `测试`                         |
+| [英语熟练度评估器](https://chat-preview.lobehub.com/market?agent=english-proficiency-assessor)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup> | 专业创建自适应英语熟练度诊断测试的专家<br/>`测试创建` `英语熟练度` `评估`                        |
+| [术语表生成器](https://chat-preview.lobehub.com/market?agent=glossary-generator)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup>               | 擅长生成带有英文定义和例句的术语表<br/>`术语表` `翻译` `语言`                                    |
+| [语法工作表生成器](https://chat-preview.lobehub.com/market?agent=grammar-revision-worksheets)<br/><sup>By **[bentwnghk](https://github.com/bentwnghk)** on **2024-02-09**</sup>  | 专注于创建英语语法学习材料和练习<br/>`english-grammar` `worksheet` `learning` `practice` `mc-qs` |
 
-> 📊 Total agents: [<kbd>**147**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
+> 📊 Total agents: [<kbd>**170**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
 
  <!-- AGENT LIST -->
 
@@ -615,7 +615,7 @@ This project is [MIT](./LICENSE) licensed.
 [codespaces-link]: https://codespaces.new/lobehub/lobe-chat
 [codespaces-shield]: https://github.com/codespaces/badge.svg
 [deploy-button-image]: https://vercel.com/button
-[deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat&env=OPENAI_API_KEY&envDescription=Find%20your%20OpenAI%20API%20Key%20by%20click%20the%20right%20Learn%20More%20button.&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&project-name=lobe-chat&repository-name=lobe-chat
+[deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flobehub%2Flobe-chat&env=OPENAI_API_KEY,ACCESS_CODE&envDescription=Find%20your%20OpenAI%20API%20Key%20by%20click%20the%20right%20Learn%20More%20button.%20%7C%20Access%20Code%20can%20protect%20your%20website&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&project-name=lobe-chat&repository-name=lobe-chat
 [deploy-on-sealos-button-image]: https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg
 [deploy-on-sealos-link]: https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dlobe-chat
 [deploy-on-zeabur-button-image]: https://zeabur.com/button.svg
