@@ -25,7 +25,7 @@ export const ABOUT = pkg.homepage;
 export const FEEDBACK = pkg.bugs.url;
 export const DISCORD = 'https://discord.gg/AYFPHvv2jT';
 export const HOME = 'https://www.ilovemath.xyz';
-
+export const PRIVACY_URL = 'https://gpt.ilovemath.xyz/privacy'
 export const PLUGINS_INDEX_URL = 'https://chat-plugins.lobehub.com';
 
 export const MORE_MODEL_PROVIDER_REQUEST_URL =
