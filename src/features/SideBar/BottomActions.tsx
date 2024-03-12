@@ -12,23 +12,24 @@ import {
   Settings,
   Settings2,
 } from 'lucide-react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 import { ABOUT, CHANGELOG, FEEDBACK, GITHUB, HOME, WIKI } from '@/const/url';
+
 import DataImporter from '@/features/DataImporter';
 import { configService } from '@/services/config';
 import { GlobalStore, useGlobalStore } from '@/store/global';
-import { SettingsTabs, SidebarTabKey } from '@/store/global/initialState';
+import { SidebarTabKey } from '@/store/global/initialState';
 
 export interface BottomActionProps {
-  setTab: GlobalStore['switchSideBar'];
-  tab: GlobalStore['sidebarKey'];
+  tab?: GlobalStore['sidebarKey'];
 }
 
-const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
+const BottomActions = memo<BottomActionProps>(({ tab }) => {
   const router = useRouter();
   const { t } = useTranslation('common');
 
@@ -91,10 +92,10 @@ const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
       onClick: () => window.open(CHANGELOG, '__blank'),
     },
     {
-      icon: <Icon icon={Book} />,
+      icon: <Icon icon={DiscordIcon} />,
       key: 'wiki',
-      label: 'WIKI',
-      onClick: () => window.open(WIKI, '__blank'),
+      label: 'Discord',
+      onClick: () => window.open(DISCORD, '__blank'),
     },
     {
       icon: <Icon icon={Heart} />,
@@ -114,11 +115,6 @@ const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
         </Flexbox>
       ),
       onClick: () => {
-        setTab(SidebarTabKey.Setting);
-        useGlobalStore.setState({
-          settingsTab: SettingsTabs.Common,
-          sidebarKey: SidebarTabKey.Setting,
-        });
         router.push('/settings/common');
       },
     },
@@ -126,6 +122,7 @@ const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
 
   return (
     <>
+
       <ActionIcon
         icon={Home}
         onClick={() => window.open(HOME, '__blank')}
@@ -138,6 +135,7 @@ const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
         placement={'right'}
         title={'GitHub'}
       />
+
       <Dropdown arrow={false} menu={{ items }} trigger={['click']}>
         {hasNewVersion ? (
           <Flexbox>
