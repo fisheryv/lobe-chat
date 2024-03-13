@@ -1,7 +1,6 @@
 import { ActionIcon, Icon } from '@lobehub/ui';
 import { Badge, ConfigProvider, Dropdown, MenuProps } from 'antd';
 import {
-  Book,
   Feather,
   FileClock,
   Github,
@@ -12,13 +11,12 @@ import {
   Settings,
   Settings2,
 } from 'lucide-react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { ABOUT, CHANGELOG, FEEDBACK, GITHUB, HOME, WIKI } from '@/const/url';
+import { ABOUT, CHANGELOG, FEEDBACK, GITHUB, HOME } from '@/const/url';
 
 import DataImporter from '@/features/DataImporter';
 import { configService } from '@/services/config';
@@ -90,12 +88,6 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
       key: 'changelog',
       label: t('changelog'),
       onClick: () => window.open(CHANGELOG, '__blank'),
-    },
-    {
-      icon: <Icon icon={DiscordIcon} />,
-      key: 'wiki',
-      label: 'Discord',
-      onClick: () => window.open(DISCORD, '__blank'),
     },
     {
       icon: <Icon icon={Heart} />,

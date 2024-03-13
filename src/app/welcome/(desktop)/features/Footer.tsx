@@ -7,7 +7,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { GITHUB, HOME, WIKI } from '@/const/url';
+import { GITHUB, HOME } from '@/const/url';
 
 
 const Footer = memo(() => {
@@ -25,12 +25,6 @@ const Footer = memo(() => {
           onClick={() => window.open(HOME, '__blank')}
           size={'site'}
           title={'Home'}
-        />
-        <ActionIcon
-          icon={Book}
-          onClick={() => window.open(DOCUMENTS, '__blank')}
-          size={'site'}
-          title={t('document')}
         />
         <ActionIcon
           icon={Github}
