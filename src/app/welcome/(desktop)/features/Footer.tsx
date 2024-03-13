@@ -4,7 +4,7 @@ import { ActionIcon } from '@lobehub/ui';
 import { useTheme } from 'antd-style';
 import { Github, Home } from 'lucide-react';
 import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 import { GITHUB, HOME } from '@/const/url';
