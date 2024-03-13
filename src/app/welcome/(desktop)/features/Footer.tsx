@@ -12,7 +12,7 @@ import { GITHUB, HOME } from '@/const/url';
 
 const Footer = memo(() => {
   const theme = useTheme();
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
 
   return (
     <Flexbox align={'center'} horizontal justify={'space-between'} style={{ padding: 16 }}>
