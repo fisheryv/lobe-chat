@@ -2,7 +2,7 @@
 
 import { ActionIcon } from '@lobehub/ui';
 import { useTheme } from 'antd-style';
-import { Book, Github, Home } from 'lucide-react';
+import { Github, Home } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
