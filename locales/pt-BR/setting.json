@@ -32,6 +32,11 @@
   },
   "llm": {
     "Anthropic": {
+      "endpoint": {
+        "desc": "Além do endereço padrão, deve incluir http(s)://",
+        "placeholder": "https://api.anthropic.com",
+        "title": "Endereço do Proxy da API"
+      },
       "title": "Anthropic",
       "token": {
         "desc": "Insira a chave da API da Anthropic",
@@ -92,6 +97,14 @@
         "desc": "Insira a API Key do Google",
         "placeholder": "Google API Key",
         "title": "API Key"
+      }
+    },
+    "Groq": {
+      "title": "Groq",
+      "token": {
+        "desc": "Insira a chave da API do Groq",
+        "placeholder": " Chave da API do Groq",
+        "title": "Chave da API"
       }
     },
     "Mistral": {
@@ -164,6 +177,22 @@
         "title": "Usar Azure OpenAI"
       }
     },
+    "OpenRouter": {
+      "checker": {
+        "desc": "Verifique se o endereço do proxy está preenchido corretamente"
+      },
+      "customModelName": {
+        "desc": "Adicione modelos personalizados, separando vários modelos com vírgula (,)",
+        "placeholder": "mistralai/mistral-7b-instruct:free,openchat/openchat-7b:free",
+        "title": "Nome do Modelo Personalizado"
+      },
+      "title": "OpenRouter",
+      "token": {
+        "desc": "Insira a chave da API do OpenRouter AI",
+        "placeholder": "Chave da API do OpenRouter AI",
+        "title": "Chave da API"
+      }
+    },
     "Perplexity": {
       "title": "Perplexity",
       "token": {
@@ -187,6 +216,14 @@
       "title": "Verificação de Conectividade"
     },
     "waitingForMore": "Mais modelos estão sendo <1>planejados para serem adicionados</1>, aguarde ansiosamente ✨"
+  },
+  "ollama": {
+    "download": {
+      "desc": "Ollama está baixando este modelo. Por favor, evite fechar esta página. O download será retomado do ponto em que parou, caso seja reiniciado.",
+      "remainingTime": "Tempo restante",
+      "speed": "Velocidade de download",
+      "title": "Baixando modelo {{model}}"
+    }
   },
   "plugin": {
     "addTooltip": "Adicionar plug-in personalizado",
