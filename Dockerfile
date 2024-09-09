@@ -63,8 +63,8 @@ RUN \
     # Install the dependencies
     && pnpm i \
     # Add sharp dependencies
-    && mkdir -p /sharp \
-    && pnpm add sharp --prefix /sharp
+    && mkdir -p /deps \
+    && pnpm add sharp --prefix /deps
 
 COPY . .
 
@@ -80,7 +80,7 @@ COPY --from=builder /app/public /app/public
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder /app/.next/standalone /app/
 COPY --from=builder /app/.next/static /app/.next/static
-COPY --from=builder /sharp/node_modules/.pnpm /app/node_modules/.pnpm
+COPY --from=builder /deps/node_modules/.pnpm /app/node_modules/.pnpm
 
 ## Production image, copy all the files and run next
 FROM base
@@ -109,7 +109,7 @@ ENV \
     # Anthropic
     ANTHROPIC_API_KEY="" ANTHROPIC_PROXY_URL="" \
     # Amazon Bedrock
-    AWS_ACCESS_KEY_ID="" AWS_SECRET_ACCESS_KEY="" AWS_REGION="" \
+    AWS_ACCESS_KEY_ID="" AWS_SECRET_ACCESS_KEY="" AWS_REGION="" AWS_BEDROCK_MODEL_LIST="" \
     # Azure OpenAI
     AZURE_API_KEY="" AZURE_API_VERSION="" AZURE_ENDPOINT="" AZURE_MODEL_LIST="" \
     # Baichuan
@@ -187,6 +187,13 @@ CMD \
             '[ProxyList]' \
             "$protocol $host $port" \
         > "/etc/proxychains/proxychains.conf"; \
+    fi; \
+    # Fix DNS resolving issue in Docker Compose, ref https://github.com/lobehub/lobe-chat/pull/3837
+    if [ -f "/etc/resolv.conf" ]; then \
+        resolv_conf=$(grep '^nameserver' "/etc/resolv.conf" | awk '{print "nameserver " $2}'); \
+        printf "%s\n" \
+            "$resolv_conf" \
+        > "/etc/resolv.conf"; \
     fi; \
     # Run the server
     ${PROXYCHAINS} node "/app/server.js";
