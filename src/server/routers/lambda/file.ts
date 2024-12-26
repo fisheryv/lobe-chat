@@ -32,32 +32,23 @@ export const fileRouter = router({
     }),
 
   createFile: fileProcedure
-    .input(
-      UploadFileSchema.omit({ data: true, saveMode: true, url: true }).extend({ url: z.string() }),
-    )
+    .input(UploadFileSchema.omit({ url: true }).extend({ url: z.string() }))
     .mutation(async ({ ctx, input }) => {
       const { isExist } = await ctx.fileModel.checkHash(input.hash!);
 
-      // if the file is not exist in global file, create a new one
-      if (!isExist) {
-        await ctx.fileModel.createGlobalFile({
+      const { id } = await ctx.fileModel.create(
+        {
+          fileHash: input.hash,
           fileType: input.fileType,
-          hashId: input.hash!,
+          knowledgeBaseId: input.knowledgeBaseId,
           metadata: input.metadata,
+          name: input.name,
           size: input.size,
           url: input.url,
-        });
-      }
-
-      const { id } = await ctx.fileModel.create({
-        fileHash: input.hash,
-        fileType: input.fileType,
-        knowledgeBaseId: input.knowledgeBaseId,
-        metadata: input.metadata,
-        name: input.name,
-        size: input.size,
-        url: input.url,
-      });
+        },
+        // if the file is not exist in global file, create a new one
+        !isExist,
+      );
 
       return { id, url: await getFullFileUrl(input.url) };
     }),

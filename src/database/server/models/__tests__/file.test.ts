@@ -1,5 +1,5 @@
 // @vitest-environment node
-import { eq, inArray } from 'drizzle-orm';
+import { eq, inArray } from 'drizzle-orm/expressions';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { getTestDBInstance } from '@/database/server/core/dbForTest';
@@ -58,6 +58,32 @@ describe('FileModel', () => {
         where: eq(knowledgeBaseFiles.fileId, id),
       });
       expect(kbFile).toMatchObject({ fileId: id, knowledgeBaseId: 'kb1' });
+    });
+
+    it('should create a new file with hash', async () => {
+      const params = {
+        name: 'test-file.txt',
+        url: 'https://example.com/test-file.txt',
+        size: 100,
+        fileHash: 'abc',
+        fileType: 'text/plain',
+      };
+
+      const { id } = await fileModel.create(params, true);
+      expect(id).toBeDefined();
+
+      const file = await serverDB.query.files.findFirst({ where: eq(files.id, id) });
+      expect(file).toMatchObject({ ...params, userId });
+
+      const globalFile = await serverDB.query.globalFiles.findFirst({
+        where: eq(globalFiles.hashId, params.fileHash),
+      });
+      expect(globalFile).toMatchObject({
+        url: 'https://example.com/test-file.txt',
+        size: 100,
+        hashId: 'abc',
+        fileType: 'text/plain',
+      });
     });
   });
 
