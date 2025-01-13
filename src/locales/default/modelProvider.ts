@@ -79,7 +79,9 @@ export default {
       title: '服务商简介',
     },
     id: {
-      placeholder: '建议全小写，例如 openai，创建后将不可修改',
+      desc: '作为服务商唯一标识，创建后将不可修改',
+      format: '只能包含数字、小写字母、连字符（-）和下划线（_）',
+      placeholder: '例如 openai、gemini 等',
       required: '请填写服务商 ID',
       title: '服务商 ID',
     },
@@ -150,7 +152,7 @@ export default {
       title: '正在下载模型 {{model}} ',
     },
     endpoint: {
-      desc: '填入 Ollama 接口代理地址，本地未额外指定可留空',
+      desc: '必须包含http(s)://，本地未额外指定可留空',
       title: 'Ollama 服务地址',
     },
     setup: {
