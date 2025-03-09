@@ -21,7 +21,12 @@ import { MessageSemanticSearchChunk } from '@/types/rag';
 import { setNamespace } from '@/utils/storeDebug';
 
 import { chatSelectors, topicSelectors } from '../../../selectors';
-import { getAgentChatConfig, getAgentConfig, getAgentKnowledge } from './helpers';
+import {
+  getAgentChatConfig,
+  getAgentConfig,
+  getAgentEnableHistoryCount,
+  getAgentKnowledge,
+} from './helpers';
 
 const n = setNamespace('ai');
 
@@ -392,7 +397,11 @@ export const generateAIChat: StateCreator<
     // ================================== //
 
     // 1. slice messages with config
-    let preprocessMsgs = chatHelpers.getSlicedMessagesWithConfig(messages, chatConfig, true);
+    let preprocessMsgs = chatHelpers.getSlicedMessages(messages, {
+      includeNewUserMessage: true,
+      enableHistoryCount: getAgentEnableHistoryCount(),
+      historyCount: chatConfig.historyCount,
+    });
 
     // 2. replace inputMessage template
     preprocessMsgs = !chatConfig.inputTemplate
@@ -455,7 +464,10 @@ export const generateAIChat: StateCreator<
         await messageService.updateMessageError(messageId, error);
         await refreshMessages();
       },
-      onFinish: async (content, { traceId, observationId, toolCalls, reasoning, grounding }) => {
+      onFinish: async (
+        content,
+        { traceId, observationId, toolCalls, reasoning, grounding, usage },
+      ) => {
         // if there is traceId, update it
         if (traceId) {
           msgTraceId = traceId;
@@ -474,6 +486,7 @@ export const generateAIChat: StateCreator<
           toolCalls,
           reasoning: !!reasoning ? { ...reasoning, duration } : undefined,
           search: !!grounding?.citations ? grounding : undefined,
+          metadata: usage,
         });
       },
       onMessageHandle: async (chunk) => {

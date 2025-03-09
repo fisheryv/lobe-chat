@@ -32,13 +32,21 @@
   "duplicateTitle": "{{title}} Cópia",
   "emptyAgent": "Sem assistente disponível",
   "extendParams": {
+    "disableContextCaching": {
+      "desc": "O custo de geração de uma única conversa pode ser reduzido em até 90%, com um aumento de 4 vezes na velocidade de resposta (<1>Saiba mais</1>). Ao ativar, o limite de mensagens históricas será desativado automaticamente.",
+      "title": "Ativar cache de contexto"
+    },
     "enableReasoning": {
+      "desc": "Baseado nas restrições do mecanismo Claude Thinking (<1>Saiba mais</1>), ao ativar, o limite de mensagens históricas será desativado automaticamente.",
       "title": "Ativar Pensamento Profundo"
     },
     "reasoningBudgetToken": {
       "title": "Token de Consumo de Pensamento"
     },
     "title": "Funcionalidade de Extensão do Modelo"
+  },
+  "history": {
+    "title": "O assistente lembrará apenas das últimas {{count}} mensagens"
   },
   "historyRange": "Intervalo de Histórico",
   "historySummary": "Resumo das mensagens históricas",
@@ -78,6 +86,39 @@
     "delAndRegenerate": "Excluir e Regenerar",
     "deleteDisabledByThreads": "Existem subtópicos, não é possível deletar.",
     "regenerate": "Regenerar"
+  },
+  "messages": {
+    "modelCard": {
+      "credit": "Créditos",
+      "creditPricing": "Precificação",
+      "creditTooltip": "Para facilitar a contagem, consideramos 1$ como 1M créditos, por exemplo, $3/M tokens se converte em 3 créditos/token",
+      "pricing": {
+        "inputCachedTokens": "Entrada em cache {{amount}}/créditos · ${{amount}}/M",
+        "inputCharts": "${{amount}}/M caracteres",
+        "inputMinutes": "${{amount}}/minuto",
+        "inputTokens": "Entrada {{amount}}/créditos · ${{amount}}/M",
+        "outputTokens": "Saída {{amount}}/créditos · ${{amount}}/M",
+        "writeCacheInputTokens": "Cache de entrada de escrita {{amount}}/pontos · ${{amount}}/M"
+      }
+    },
+    "tokenDetails": {
+      "average": "Preço médio",
+      "input": "Entrada",
+      "inputAudio": "Entrada de áudio",
+      "inputCached": "Entrada em cache",
+      "inputCitation": "Citação de entrada",
+      "inputText": "Entrada de texto",
+      "inputTitle": "Detalhes da entrada",
+      "inputUncached": "Entrada não cacheada",
+      "inputWriteCached": "Entrada de cache de escrita",
+      "output": "Saída",
+      "outputAudio": "Saída de áudio",
+      "outputText": "Saída de texto",
+      "outputTitle": "Detalhes da saída",
+      "reasoning": "Raciocínio profundo",
+      "title": "Detalhes da geração",
+      "total": "Total consumido"
+    }
   },
   "newAgent": "Novo Assistente",
   "pin": "Fixar",
