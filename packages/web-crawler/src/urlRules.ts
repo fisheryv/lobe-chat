@@ -61,4 +61,15 @@ export const crawUrlRules: CrawlUrlRule[] = [
     },
     urlPattern: 'https://www.qiumiwu.com/standings/(.*)',
   },
+
+  // mozilla use jina
+  {
+    impls: ['jina'],
+    urlPattern: 'https://developer.mozilla.org(.*)',
+  },
+  // cvpr thecvf
+  {
+    impls: ['jina'],
+    urlPattern: 'https://cvpr.thecvf.com(.*)',
+  },
 ];
