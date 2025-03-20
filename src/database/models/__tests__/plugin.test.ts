@@ -1,12 +1,13 @@
 // @vitest-environment node
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { getTestDBInstance } from '@/database/server/core/dbForTest';
+import { LobeChatDatabase } from '@/database/type';
 
-import { NewInstalledPlugin, installedPlugins, users } from '../../../schemas';
-import { PluginModel } from '../plugin';
+import { NewInstalledPlugin, userInstalledPlugins, users } from '../../schemas';
+import { PluginModel } from '../../server/models/plugin';
+import { getTestDB } from './_util';
 
-let serverDB = await getTestDBInstance();
+const serverDB: LobeChatDatabase = await getTestDB();
 
 const userId = 'plugin-db';
 const pluginModel = new PluginModel(serverDB, userId);
@@ -44,7 +45,7 @@ describe('PluginModel', () => {
 
   describe('delete', () => {
     it('should delete an installed plugin by identifier', async () => {
-      await serverDB.insert(installedPlugins).values({
+      await serverDB.insert(userInstalledPlugins).values({
         userId,
         type: 'plugin',
         identifier: 'test-plugin',
@@ -53,14 +54,14 @@ describe('PluginModel', () => {
 
       await pluginModel.delete('test-plugin');
 
-      const result = await serverDB.select().from(installedPlugins);
+      const result = await serverDB.select().from(userInstalledPlugins);
       expect(result).toHaveLength(0);
     });
   });
 
   describe('deleteAll', () => {
     it('should delete all installed plugins for the user', async () => {
-      await serverDB.insert(installedPlugins).values([
+      await serverDB.insert(userInstalledPlugins).values([
         {
           userId,
           type: 'plugin',
@@ -83,7 +84,7 @@ describe('PluginModel', () => {
 
       await pluginModel.deleteAll();
 
-      const result = await serverDB.select().from(installedPlugins);
+      const result = await serverDB.select().from(userInstalledPlugins);
       expect(result).toHaveLength(1);
       expect(result[0].userId).toBe('456');
     });
@@ -91,7 +92,7 @@ describe('PluginModel', () => {
 
   describe('query', () => {
     it('should query installed plugins for the user', async () => {
-      await serverDB.insert(installedPlugins).values([
+      await serverDB.insert(userInstalledPlugins).values([
         {
           userId,
           type: 'plugin',
@@ -125,7 +126,7 @@ describe('PluginModel', () => {
 
   describe('findById', () => {
     it('should find an installed plugin by identifier', async () => {
-      await serverDB.insert(installedPlugins).values([
+      await serverDB.insert(userInstalledPlugins).values([
         {
           userId,
           type: 'plugin',
@@ -149,7 +150,7 @@ describe('PluginModel', () => {
 
   describe('update', () => {
     it('should update an installed plugin', async () => {
-      await serverDB.insert(installedPlugins).values({
+      await serverDB.insert(userInstalledPlugins).values({
         userId,
         type: 'plugin',
         identifier: 'test-plugin',
